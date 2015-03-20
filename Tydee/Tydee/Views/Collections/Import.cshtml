@@ -1,0 +1,22 @@
+﻿@model Tydee.Models.ApiResponse
+
+@{
+    ViewBag.Title = "Import Collections";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Import Collections from JSON</h2>
+
+<h3>Select json file to import?</h3>
+<div>
+   @using (Html.BeginForm("Import", "Collections", FormMethod.Post, new { enctype = "multipart/form-data" }))
+   {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="file" height="400" width="400" name="json" />
+            <input type="submit" value="Import" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

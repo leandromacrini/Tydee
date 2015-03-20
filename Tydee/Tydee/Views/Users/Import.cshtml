@@ -1,0 +1,30 @@
+﻿@model Tydee.Models.ApiResponse
+
+@{
+    ViewBag.Title = "Import";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Import from JSON</h2>
+
+@if(this.Model != null)
+{
+    <h3>Utenti importati: @(((dynamic)this.Model.Data).UserCreated)</h3>
+    <br />
+    <hr />
+    <br />
+}
+
+<h3>Paste json text to import?</h3>
+<div>
+   @using (Html.BeginForm("Import", "Users", FormMethod.Post, new { enctype = "multipart/form-data" }))
+   {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="file" height="400" width="400" name="json" />
+            <input type="submit" value="Import" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

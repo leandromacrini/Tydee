@@ -23,13 +23,25 @@ namespace Tydee
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/fancybox").Include(
+                      "~/Scripts/jquery.fancybox.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
+                      "~/Scripts/knockout-3.3.0.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                      //"~/Scripts/app/viewmodels/statistics-viewmodel.js",
+                      "~/Scripts/app/app.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/jquery.fancybox.css?v=2.1.5",
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css",
+                      "~/Content/Statistics.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
         }
     }
 }

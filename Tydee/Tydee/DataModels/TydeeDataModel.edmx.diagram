@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d381f242068418bb024ec9867eddb0f" Name="Diagram1" ZoomLevel="100" >
+        <EntityTypeShape EntityType="TydeeDataModel.Collection" Width="1.625" PointX="6.875" PointY="0.875" />
+        <EntityTypeShape EntityType="TydeeDataModel.User" Width="2" PointX="9.375" PointY="0.875" />
+        <EntityTypeShape EntityType="TydeeDataModel.Shop" Width="1.5" PointX="12.125" PointY="0.875" />
+        <EntityTypeShape EntityType="TydeeDataModel.UserOption" Width="2" PointX="9.375" PointY="5" />
+        <AssociationConnector Association="TydeeDataModel.UserUserOption" />
+        <EntityTypeShape EntityType="TydeeDataModel.CollectionOption" Width="1.625" PointX="6.875" PointY="5" />
+        <AssociationConnector Association="TydeeDataModel.CollectionCollectionOption" />
+        <AssociationConnector Association="TydeeDataModel.UserOptionCollectionOption" />
+        <AssociationConnector Association="TydeeDataModel.UserCollection" />
+        <AssociationConnector Association="TydeeDataModel.UserShop" />
+        <EntityTypeShape EntityType="TydeeDataModel.Item" Width="1.5" PointX="4.5" PointY="0.875" />
+        <AssociationConnector Association="TydeeDataModel.ItemCollection" />
+        <EntityTypeShape EntityType="TydeeDataModel.Picture" Width="1.5" PointX="2.125" PointY="0.875" />
+        <AssociationConnector Association="TydeeDataModel.ItemPicture" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

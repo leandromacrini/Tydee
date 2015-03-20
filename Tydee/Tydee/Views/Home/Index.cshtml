@@ -1,31 +1,60 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+﻿
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="beta banner" /></a>
+            <div class="navbar-right">
+                <a href="/login" class="btn btn-default navbar-btn">Login</a>
+                <a href="/register" class="btn btn-info navbar-btn">Register</a>
+            </div>
+        </div>
+        <div class="container-fluid home">
+            <div class="row title_row">
+                <img src="/images/store.jpg" height="250px" class="half_opaque" />
+                <p class="col-xs-12">THE HOME OF YOUR COLLECTIONS</p>
+                <div class="col-md-offset-3 col-md-2">
+                    <div class="home_box">
+                        <span><a href="/privacy" target="_self">Privacy policy</a></span>
+                    </div>
+                </div>
+                <div class="col-md-offset-2 col-md-2">
+                    <div class="home_box">
+                        <span>Join us <a href="/register" target="_self">It's free</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2">
+                    <h3 class="question">What is Tydee?</h3>
+                    <p class="answer">Tydee is a cloud based Collection Management Software, that will help you organize your collection of mangas, games, movies and any other collectable object.</p>
+                </div>
+                <div class="col-md-3 col-md-offset-2 image">
+                    <img src="/images/row1.jpg" height="250px" class="half_opaque" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2 image">
+                    <img src="/images/store.jpg" height="250px" class="half_opaque" />
+                </div>
+                <div class="col-md-3 col-md-offset-2">
+                    <h3 class="question">Your personal shop</h3>
+                    <p class="answer">With Tydee will have the opportunity to create your own personal shop that you can share with anyone you like. Make sure that people can find out what are the objects that you intend to sell or exchange just passing the link to your shop!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2">
+                    <h3 class="question">Social integrated</h3>
+                    <p class="answer">Tydee not only allows you to log in with your Facebook account, but will also allow you to share your collections with your groups and your diary so you can reach all the people who could be interested in your items.</p>
+                </div>
+                <div class="col-md-3 col-md-offset-2 image">
+                    <img src="/images/social.jpg" height="250px" class="half_opaque" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2 image">
+                    <img src="/images/ebay.gif" height="250px" class="half_opaque" />
+                </div>
+                <div class="col-md-3 col-md-offset-2">
+                    <h3 class="question">eBay powered</h3>
+                    <p class="answer">Thanks to integration with the eBay API you will be able to find the real value of your items and be able to finally find the rare items of your dreams. In the future it will be possible to directly manage your auctions and your eBay store too.</p>
+                </div>
+            </div>
+        </div>
